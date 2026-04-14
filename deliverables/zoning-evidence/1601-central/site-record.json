@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "site-record-spec.v1",
+  "site": {
+    "id": "1601-central-ave",
+    "address": "1601 CENTRAL AVE, Hamilton County, OH",
+    "canonicalAddress": "1601 CENTRAL AVE, Hamilton County, OH",
+    "parcelKeys": [
+      "013300060294"
+    ],
+    "parcelCount": 1,
+    "sourceRollupId": "9308b72e-1459-459b-96f6-3cbafdd6e39e",
+    "ownerName": "SMITH MARVIN",
+    "municipality": "City of Cincinnati",
+    "neighborhood": "West End",
+    "primaryZoningCode": "MG-T",
+    "areaSqft": 857.5,
+    "areaAcres": 0.0197,
+    "parcelFrontageFt": 18.0,
+    "parcelDepthFt": 94.0,
+    "effectiveFrontageFt": 18.0,
+    "effectiveDepthFt": 94.0,
+    "frontageFt": 95.0,
+    "depthFt": 94.0,
+    "siteMode": "single_lot"
+  },
+  "frontage": {
+    "status": "needs_review",
+    "mode": "direct_street",
+    "entryStreet": "Central Ave",
+    "rearStreet": null,
+    "entrySideLabel": null,
+    "frontSideNumber": null,
+    "rearSideNumber": 4,
+    "edgeLabels": [
+      "side",
+      "side",
+      "side",
+      "rear",
+      "front",
+      "front",
+      "front",
+      "front",
+      "front",
+      "front",
+      "front",
+      "side"
+    ],
+    "edgeLabelSource": "deterministic.nearby_parcel_context",
+    "frontEdgeIndices": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "rearEdgeIndices": [
+      3
+    ],
+    "frontageConfidence": "low",
+    "notes": [
+      "Edge labels and frontage streets were inferred from nearby parcel context and should be reviewed before final site planning."
+    ]
+  },
+  "cardinalContacts": {
+    "north": {
+      "side": "north",
+      "edgeIndices": [],
+      "totalLengthFt": 0.0,
+      "contextType": "none",
+      "contextName": null,
+      "notes": [
+        "No boundary edges were classified as the north contact."
+      ]
+    },
+    "south": {
+      "side": "south",
+      "edgeIndices": [],
+      "totalLengthFt": 0.0,
+      "contextType": "none",
+      "contextName": null,
+      "notes": [
+        "No boundary edges were classified as the south contact."
+      ]
+    },
+    "east": {
+      "side": "east",
+      "edgeIndices": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "totalLengthFt": 22.9,
+      "contextType": "street",
+      "contextName": "Central Ave",
+      "notes": [
+        "East contact touches declared street context."
+      ]
+    },
+    "west": {
+      "side": "west",
+      "edgeIndices": [
+        3,
+        4
+      ],
+      "totalLengthFt": 179.6,
+      "contextType": "street",
+      "contextName": "Central Ave",
+      "notes": [
+        "West contact touches declared street context."
+      ]
+    }
+  },
+  "geometry": {
+    "coordinateSystem": {
+      "kind": "normalized_local_ft",
+      "units": "ft",
+      "xAxis": "local site x (origin = min x - 10 ft)",
+      "yAxis": "local site y (origin = min y - 10 ft)"
+    },
+    "siteBoundaryFt": [
+      [
+        103.7651,
+        16.1837
+      ],
+      [
+        104.0781,
+        17.0961
+      ],
+      [
+        103.7126,
+        21.044
+      ],
+      [
+        102.4128,
+        28.2864
+      ],
+      [
+        10.0,
+        12.0567
+      ],
+      [
+        95.8239,
+        10.0
+      ],
+      [
+        97.3229,
+        10.2503
+      ],
+      [
+        98.7599,
+        10.7441
+      ],
+      [
+        100.0962,
+        11.4675
+      ],
+      [
+        101.2953,
+        12.4013
+      ],
+      [
+        102.3242,
+        13.5194
+      ],
+      [
+        103.1552,
+        14.792
+      ],
+      [
+        103.7651,
+        16.1837
+      ]
+    ],
+    "normalizedLotFrame": {
+      "widthFt": 95.0,
+      "depthFt": 94.0
+    }
+  },
+  "assumptions": {
+    "geometryAuthority": "address_rollups.merged_geometry + site_rollup_attributes",
+    "renderReference": "shared site-record export",
+    "boardCoordinateSpace": "normalized_local_ft",
+    "notes": [
+      "This artifact carries raw site facts before zoning interpretation."
+    ]
+  },
+  "warnings": [
+    {
+      "code": "edge_labels_inferred",
+      "severity": "warning",
+      "message": "Edge labels were inferred from nearby parcel context and have not yet been manually confirmed."
+    },
+    {
+      "code": "frontage_unconfirmed",
+      "severity": "info",
+      "message": "Frontage metadata is still provisional; confirm the entry edge before downstream site planning."
+    }
+  ]
+}

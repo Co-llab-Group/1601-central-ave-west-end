@@ -1,0 +1,9 @@
+{
+  "artifact": "site-context",
+  "siteId": "1601-central-ave",
+  "siteRecordPath": "/Users/hoff/projects/workspace/client/CO-LLAB/projects/1601-central-ave-west-end/deliverables/zoning-evidence/1601-central/site-record.json",
+  "siteRecordSha256": "30c3de057e132e8e092a551143df175cd642cc42d8074b9a35d8729a5840684e",
+  "source": "db.nearby_parcels_and_buildings",
+  "runAt": "2026-04-14T20:36:21.102698+00:00",
+  "pipelineVersion": "51f2dbe80ecc20abc0c8ff99fb0b43cc75a9b443"
+}

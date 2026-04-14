@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "model_type": "phase_zero_pro_forma_lite",
+    "version": "v1",
+    "project": "1601-1607 Central Ave, West End, Cincinnati",
+    "as_of": "2026-04-14",
+    "statuses": ["confirmed", "derived", "indicative", "target", "unconfirmed"],
+    "principles": [
+      "Directional, range-based, labeled by confidence.",
+      "Confirmed = parcel and ownership facts only.",
+      "Modeled/Indicative = economics, pricing, and structure assumptions.",
+      "Unconfirmed = incentives, entitlement, anything requiring outside validation.",
+      "No single-point numbers unless truly fixed.",
+      "Every headline number in the brief must trace back to an input."
+    ]
+  },
+  "site": {
+    "marvin_land_sf":         { "value": 6010,  "unit": "sf",  "status": "confirmed", "source": "parcel-data.md:7-10" },
+    "marvin_land_ac":         { "value": 0.138, "unit": "ac",  "status": "confirmed", "source": "parcel-data.md:7-10" },
+    "marvin_assessed_value":  { "value": 31640, "unit": "usd", "status": "confirmed", "source": "parcel-data.md:7-10" },
+    "public_adjacent_ac":     { "value": 0.302, "unit": "ac",  "status": "confirmed", "source": "parcel-data.md:20-25" },
+    "distressed_adjacent_ac": { "value": 0.258, "unit": "ac",  "status": "confirmed", "source": "parcel-data.md:31-35" },
+    "assemblage_target_sf":   { "value": 30400, "unit": "sf",  "status": "derived",   "source": "parcel-data.md:62" }
+  },
+  "zoning_incentives": {
+    "zoning_base":            { "value": "MG-T", "status": "confirmed",   "source": "parcel-data.md:73-80" },
+    "hotel_entitlement_path": { "value": "planning confirmation required", "status": "unconfirmed", "source": "parcel-data.md:84" },
+    "commercial_cra":         { "value": "negotiated commercial CRA only", "status": "unconfirmed", "source": "meeting-prep-notes.md:120" },
+    "nmtc_eligibility":       { "value": "tract and allocation not yet confirmed", "status": "unconfirmed", "source": "meeting-prep-notes.md:121" },
+    "tif_status":             { "value": "parcel-level check required", "status": "unconfirmed", "source": "West End TIF map review" }
+  },
+  "path_a": {
+    "keys":            { "low": 24,    "base": 26,    "high": 28,    "unit": "rooms",        "status": "target",     "source": "meeting-briefing.md:64-69" },
+    "gsf":             { "value": 24000,                             "unit": "gsf",          "status": "indicative", "source": "meeting-briefing.md:75" },
+    "hard_cost_psf":   { "low": 275,   "base": 300,   "high": 325,   "unit": "usd_per_gsf",  "status": "indicative", "source": "meeting-briefing.md:75" },
+    "soft_cost_pct":   { "low": 0.15,  "base": 0.17,  "high": 0.20,  "unit": "pct",          "status": "indicative", "source": "meeting-briefing.md:76" },
+    "ffe_per_key":     { "low": 15000, "base": 20000, "high": 25000, "unit": "usd_per_key",  "status": "indicative", "source": "meeting-briefing.md:77" },
+    "land_value":      { "low": 500000,"base": 700000,"high": 800000,"unit": "usd",          "status": "indicative", "source": "meeting-briefing.md:78" },
+    "contingency_pct": { "value": 0.10,                              "unit": "pct",          "status": "indicative", "source": "meeting-briefing.md:79" },
+    "occupancy":       { "value": 0.70,                              "unit": "pct",          "status": "indicative", "source": "meeting-briefing.md:81" },
+    "adr":             { "value": 130,                               "unit": "usd",          "status": "indicative", "source": "meeting-briefing.md:81" },
+    "stabilized_noi":  { "low": 350000,"base": 425000,"high": 500000,"unit": "usd",          "status": "indicative", "source": "meeting-briefing.md:81" },
+    "cap_rate":        { "low": 0.08,  "base": 0.085, "high": 0.09,  "unit": "pct",          "status": "indicative", "source": "meeting-briefing.md:83" }
+  },
+  "path_b": {
+    "keys":             { "low": 60,      "base": 70,     "high": 80,      "unit": "rooms",       "status": "target",     "source": "meeting-briefing.md:91-93" },
+    "gsf":              { "value": 65000,                                  "unit": "gsf",         "status": "indicative", "source": "meeting-briefing.md:116" },
+    "hard_cost_psf":    { "value": 300,                                    "unit": "usd_per_gsf", "status": "indicative", "source": "meeting-briefing.md:116" },
+    "soft_cost_pct":    { "value": 0.18,                                   "unit": "pct",         "status": "indicative", "source": "meeting-briefing.md:117" },
+    "ffe_per_key":      { "value": 20000,                                  "unit": "usd_per_key", "status": "indicative", "source": "meeting-briefing.md:118" },
+    "land_acquisition": { "low": 1500000, "base": 2000000, "high": 2500000,"unit": "usd",         "status": "indicative", "source": "meeting-briefing.md:119" },
+    "contingency_pct":  { "value": 0.10,                                   "unit": "pct",         "status": "indicative", "source": "meeting-briefing.md:120" },
+    "occupancy":        { "value": 0.70,                                   "unit": "pct",         "status": "indicative", "source": "meeting-briefing.md:122" },
+    "adr":              { "value": 160,                                    "unit": "usd",         "status": "indicative", "source": "meeting-briefing.md:122" },
+    "stabilized_noi":   { "low": 1800000, "base": 2000000, "high": 2200000,"unit": "usd",         "status": "indicative", "source": "meeting-briefing.md:122" },
+    "cap_rate":         { "value": 0.08,                                   "unit": "pct",         "status": "indicative", "source": "meeting-briefing.md:124" }
+  },
+  "capital_stack": {
+    "senior_debt":              { "low": 16000000, "base": 16500000, "high": 17000000, "unit": "usd", "status": "indicative",  "source": "meeting-briefing.md:137" },
+    "nmtc_equity":              { "low": 3000000,  "base": 3500000,  "high": 4000000,  "unit": "usd", "status": "unconfirmed", "source": "meeting-briefing.md:138" },
+    "htc_equity":               { "low": 0,        "base": 0,        "high": 1000000,  "unit": "usd", "status": "unconfirmed", "source": "meeting-briefing.md:139" },
+    "city_gap":                 { "low": 1000000,  "base": 1500000,  "high": 2000000,  "unit": "usd", "status": "unconfirmed", "source": "meeting-briefing.md:140" },
+    "public_land_contribution": { "low": 500000,   "base": 750000,   "high": 1000000,  "unit": "usd", "status": "unconfirmed", "source": "meeting-briefing.md:141" },
+    "marvin_land_contribution": { "low": 500000,   "base": 700000,   "high": 800000,   "unit": "usd", "status": "indicative",  "source": "meeting-briefing.md:142" },
+    "sponsor_equity":           { "low": 1500000,  "base": 1750000,  "high": 2000000,  "unit": "usd", "status": "indicative",  "source": "meeting-briefing.md:143" },
+    "lp_equity":                { "low": 2000000,  "base": 2500000,  "high": 3000000,  "unit": "usd", "status": "indicative",  "source": "meeting-briefing.md:144" }
+  },
+  "predevelopment": {
+    "total":            { "low": 600000, "base": 850000, "high": 1100000, "unit": "usd",    "status": "indicative", "source": "meeting-briefing.md:157-165" },
+    "timeline_months":  { "low": 15,     "base": 16.5,   "high": 18,      "unit": "months", "status": "indicative", "source": "meeting-briefing.md:165" }
+  },
+  "equity_options": {
+    "option_1_land_sale":        { "low": 600000, "base": 700000, "high": 800000, "unit": "usd", "status": "indicative", "source": "meeting-briefing.md:198" },
+    "option_2_equity_share":     { "low": 0.10,   "base": 0.11,   "high": 0.12,   "unit": "pct", "status": "modeled",    "source": "meeting-briefing.md:208" },
+    "option_3_pref_return":      { "value": 0.08,                                 "unit": "pct", "status": "modeled",    "source": "meeting-briefing.md:216" },
+    "option_3_residual_equity":  { "low": 0.03,   "base": 0.04,   "high": 0.05,   "unit": "pct", "status": "modeled",    "source": "meeting-briefing.md:217" }
+  }
+}

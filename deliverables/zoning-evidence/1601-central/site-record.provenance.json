@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "site-record-provenance.v1",
+  "generatedAt": "2026-04-14T20:36:15.972139+00:00",
+  "pipelineVersion": "git:51f2dbe8",
+  "dbSource": "cincinnati_dev",
+  "siteInputPath": null,
+  "siteInputHash": "sha256:a9cb1db8f86367c60c00ef9da259ce6c981e7721a7400782d915208a24cc0b86",
+  "selectionMode": "single-candidate",
+  "candidateCount": 1,
+  "rollupId": "9308b72e-1459-459b-96f6-3cbafdd6e39e",
+  "rollupKey": "canonical:7879c3c7ce8ef848718badba",
+  "rollupSourceVersion": "codex-rollup-backfill-2026-04-11",
+  "auditorDataDate": null,
+  "rollupAttributesRefreshedAt": "2026-04-11 19:35:36.736021-04",
+  "geometrySnapshotHash": "sha256:f65c28b38198727cc6009f88739e266094e34582c1a2e65efdb1d95c5cf84fde"
+}
