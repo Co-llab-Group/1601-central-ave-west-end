@@ -250,6 +250,32 @@ section {
 .prose strong { color: var(--ink); font-weight: 600; }
 .prose em { color: var(--forest-mid); font-style: italic; }
 
+.principal-rendering {
+  margin: 28px 0 32px;
+  border: 1px solid var(--rule);
+  background: var(--ink);
+  overflow: hidden;
+  max-width: 680px;
+}
+.principal-rendering img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 10;
+  object-position: center;
+  filter: saturate(0.92) contrast(1.04);
+}
+.principal-rendering figcaption {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  padding: 10px 14px;
+  background: var(--cream-card);
+  border-top: 1px solid var(--rule);
+}
+
 .pullquote {
   font-family: 'Fraunces', serif;
   font-style: italic;
@@ -1486,6 +1512,11 @@ section {
     <p class="prose">
       The development proposition, as publicly circulated, is a boutique hotel and restaurant on Central Avenue in the West End, with the principal retaining 51% ownership in exchange for contributing land and vision, and the developer providing technical execution and the entirety of pre-development capital for the remaining 49%. The public rendering depicts an eight-story masonry mixed-use building with an urban streetwall presentation &mdash; a 60&ndash;80 key boutique program.
     </p>
+
+    <figure class="principal-rendering">
+      <img src="../assets/marvin-flyer.png" alt="Rendering of proposed boutique hotel at 1601 Central Avenue" />
+      <figcaption>Principal's rendering — from public solicitation materials</figcaption>
+    </figure>
 
     <div class="pullquote">
       "Wanted: A Commercial Real Estate Developer to build a boutique Hotel and Ollie's Trolley Restaurant at the current location. West End, 1601&ndash;07 Central Avenue. Provide all technical expertise from start to finish. Must have your own funding mechanism to finance predevelopment for 49% ownership of development."
